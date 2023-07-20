@@ -1,0 +1,8 @@
+.container__bg {
+  background: linear-gradient(
+    98.62deg,
+    rgba(255, 56, 122, 0.1) -10.89%,
+    rgba(166, 62, 186, 0.1) 50.23%,
+    rgba(72, 69, 255, 0.1) 125.56%
+  );
+}

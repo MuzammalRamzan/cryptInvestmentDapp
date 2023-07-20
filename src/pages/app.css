@@ -1,0 +1,88 @@
+.patterns {
+  background: url(/img/features/pattern.png) no-repeat top / 100% 100%;
+  background-size: contain;
+  min-height: 110px;
+}
+
+div#__next {
+  overflow: hidden;
+}
+
+.slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  background: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.slider p {
+  font-size: 26px;
+  font-weight: 600;
+  font-family: Open Sans;
+  padding-left: 30px;
+  color: black;
+}
+
+.slider input[type="range"] {
+  -webkit-appearance: none !important;
+  width: 100%;
+  height: 2px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  appearance: none;
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+  background: red linear-gradient(#f327f2, #572bf7);
+  clippath: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+input[type="range"]::-webkit-slider-thumb::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: red;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.btn-grad-1 {
+  background: radial-gradient(circle at top left, #f03985, #5144f8);
+  color: white;
+  border: 0px;
+  outline-color: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.btn-grad-1:hover {
+  background: radial-gradient(circle at top left, #5144f8, #f03985);
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.patterns:hover {
+  background: url("/img/pattern_glow.png") no-repeat center / 100% 100%;
+  background-size: contain;
+  min-height: 110px;
+  transition: all 0.6s ease-in-out;
+}
+.patterns :hover .small-22 {
+  display: none;
+}
